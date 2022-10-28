@@ -10,6 +10,7 @@ Assumptions
 Note : Complete the installation with all the plugins.
 
 Steps to setup jenkins build agents.
+
 A. You need to expose the docker api, so that the jenkins can launch the jenkins build agent to complete it's jobs. You can use the following command to expose the docker API to be used,
 
 <b> Command </b>
