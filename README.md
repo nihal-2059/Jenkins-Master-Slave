@@ -23,7 +23,7 @@ B. Once the above command is ran, you can check if the docker api is actually ex
 
 ```docker exec <container-name> curl http://docker.for.mac.localhost:2376/v1.41/info```
 
-C. Once you get and output, you need to install a plugin on Jenkins called Docker.
+C. Once you get an output, you need to install a plugin on Jenkins called Docker.
 <img width="1028" alt="image" src="https://user-images.githubusercontent.com/81910297/198638961-d645c570-6b43-4f06-a1cd-2d6b461cdbfc.png">
 
 D. Next you need to configure the jenkins build agent ( slvae ) templates. Navigate to Manage Jenkins --> Manage Nodes and Clouds --> Configure Clouds
