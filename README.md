@@ -4,14 +4,14 @@ While exploring Jenkins, I came across a usecase wherein I wanted to make use of
 
 This article is based on configurations tried and tested on MAC. For other environments, you need to make appropriate changes on Step B.
 
-Assumptions
+<b>Assumptions :</b>
 1. You have Jenkins Master already installed on docker as a container. If not you can use the following command to launch the jenkins container.
 
 ```docker run --name jenkins -p 8080:8080 -p 50000:50000 jenkins/jenkins```
 
-Note : Complete the installation with all the plugins.
+<b>Note</b> : Complete the installation with all the plugins.
 
-<b>Steps</b> to setup jenkins build agents.
+Follow below <b>Steps</b> to setup jenkins build agents :
 
 A. You need to expose the docker api, so that the jenkins can launch the jenkins build agent to complete it's jobs. You can use the following command to expose the docker API to be used,
 
@@ -28,7 +28,7 @@ B. Once the above command is ran, you can check if the docker api is actually ex
 C. Once you get an output, you need to install a plugin on Jenkins called Docker.
 <img width="1028" alt="image" src="https://user-images.githubusercontent.com/81910297/198638961-d645c570-6b43-4f06-a1cd-2d6b461cdbfc.png">
 
-D. Next you need to configure the jenkins build agent ( slvae ) templates. Navigate to Manage Jenkins --> Manage Nodes and Clouds --> Configure Clouds
+D. Next you need to configure the jenkins build agent ( slave ) templates. Navigate to Manage Jenkins --> Manage Nodes and Clouds --> Configure Clouds
 You will see following screen, 
 <img width="995" alt="image" src="https://user-images.githubusercontent.com/81910297/198640244-981c0ada-7d38-4207-9fbd-723a2d4b2f69.png">
 Note : You will only see Add a new cloud option. 
