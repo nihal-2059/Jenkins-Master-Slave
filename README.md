@@ -1,6 +1,8 @@
 # Jenkins-Master-Slave-Docker
 
-Statement : Deploy jenkin build agent on Docker container.
+While exploring Jenkins, I came across a usecase wherein I wanted to make use of Jenkins slave to build some of my jobs. So after exploring I found out a way wherein we can deploy Jenkins slave as containers. Once the job is complete, the containers will be destroyed, thus releasing the resources. This removes the dependency to have extra VM's or need for more storage to accomodate the jobs.
+
+This article is based on configurations tried and tested on MAC. For other environments, you need to make appropriate changes on Step B.
 
 Assumptions
 1. You have Jenkins Master already installed on docker as a container. If not you can use the following command to launch the jenkins container.
@@ -9,7 +11,7 @@ Assumptions
 
 Note : Complete the installation with all the plugins.
 
-Steps to setup jenkins build agents.
+<b>Steps</b> to setup jenkins build agents.
 
 A. You need to expose the docker api, so that the jenkins can launch the jenkins build agent to complete it's jobs. You can use the following command to expose the docker API to be used,
 
