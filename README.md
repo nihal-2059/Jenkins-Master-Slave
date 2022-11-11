@@ -52,4 +52,4 @@ G. Next we need to configure the Docker Agent templates, this template will be u
 Done this would setup the agent template. 
 
 Once above settings are done, you are good to run the job using jenkin build agent on docker container.
-Enjoy! Cheers!
+Enjoy! Cheers!!
